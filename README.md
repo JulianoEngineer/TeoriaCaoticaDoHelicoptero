@@ -1,3 +1,3 @@
 # TeoriaCaoticaDoHelicoptero
 
-#[Divirta-se](https://output.jsbin.com/koquqi)
+#[Divirta-se](https://cdn.rawgit.com/JulianoEngineer/TeoriaCaoticaDoHelicoptero/master/index.html)
