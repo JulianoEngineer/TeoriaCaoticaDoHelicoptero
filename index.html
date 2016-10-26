@@ -65,6 +65,25 @@ var links = [
   {source: "Bluetooth", target: "Controle remoto", type: "suit"},
   {source: "Controle remoto", target: "Helicóptero de Brinquedo", type: "suit"},
   {source: "Helicóptero de Brinquedo", target: "Helicóptero", type: "licensing"},
+  {source: "Falta de Energia", target: "Apollo 13", type: "suit"},
+  {source: "Falta de Energia", target: "John Travolta", type: "suit"},
+  {source: "John Travolta", target: "Dancinha constrangedora", type: "suit"},
+  {source: "Dancinha constrangedora", target: "Apertem os cintos o piloto sumiu", type: "suit"},
+  {source: "Apertem os cintos o piloto sumiu", target: "Aviação", type: "suit"},
+  {source: "Torrinho deixou algo cair", target: "Queda infinita", type: "suit"},
+  {source: "Queda infinita", target: "Satélite", type: "suit"},
+  {source: "Satélite", target: "Vento de calda", type: "suit"},
+  {source: "Vento de calda", target: "acidente", type: "suit"},
+  {source: "acidente", target: "Araraquara", type: "suit"},
+  {source: "Araraquara", target: "Calor", type: "suit"},
+  {source: "Calor", target: "Aula de Helicóptero", type: "suit"},
+  {source: "Aula de Helicóptero", target: "Helicóptero", type: "licensing"},
+  {source: "Carro", target: "Del Rey", type: "suit"},
+  {source: "Del Rey", target: "Vacuômetro", type: "suit"},
+  {source: "Vacuômetro", target: "Borboleta de carburador", type: "suit"},
+  {source: "Borboleta de carburador", target: "Homologação de dispositivos de aviação", type: "suit"},
+  {source: "Homologação de dispositivos de aviação", target: "Helicóptero", type: "licensing"} 
+  
 ];
 
 var nodes = {};
@@ -75,8 +94,8 @@ links.forEach(function(link) {
   link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 });
 
-var width = 960,
-    height = 500;
+var width = 1000,
+    height = 800;
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
